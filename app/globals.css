@@ -2,26 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  --line-color: #e5e7eb;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.borderBlack {
+  @apply border border-black/10;
+}
+
+/* Blog post content styling */
+.blog-content {
+  @apply text-gray-800 dark:text-white/90;
+}
+
+.blog-content h1 {
+  @apply text-3xl font-bold mt-8 mb-4 text-gray-900 dark:text-white;
+}
+
+.blog-content h2 {
+  @apply text-2xl font-semibold mt-6 mb-3 text-gray-900 dark:text-white;
+}
+
+.blog-content h3 {
+  @apply text-xl font-semibold mt-5 mb-2 text-gray-900 dark:text-white;
+}
+
+.blog-content p {
+  @apply mb-4 leading-relaxed;
+}
+
+.blog-content ul,
+.blog-content ol {
+  @apply mb-4 pl-6;
+}
+
+.blog-content li {
+  @apply mb-2;
+}
+
+.blog-content ul li {
+  @apply list-disc;
+}
+
+.blog-content ol li {
+  @apply list-decimal;
+}
+
+.blog-content strong {
+  @apply font-semibold text-gray-900 dark:text-white;
+}
+
+.blog-content em {
+  @apply italic;
+}
+
+.blog-content code {
+  @apply bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-sm font-mono;
+}
+
+.blog-content pre {
+  @apply bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.blog-content blockquote {
+  @apply border-l-4 border-blue-500 pl-4 italic text-gray-700 dark:text-white/80 my-4;
 }
