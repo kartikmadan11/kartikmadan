@@ -15,7 +15,7 @@ interface BlogPostProps {
     author: string;
     publishedAt: string;
     readTime: string;
-    tags: string[];
+    tags: readonly string[];
     category: string;
   };
 }

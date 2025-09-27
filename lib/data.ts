@@ -2,9 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import wbcMicroMarketImg from "@/public/wbc-micro-market.jpg";
+import electronicShelfLabelsImg from "@/public/Electronic-Shelf-Labels.jpg";
+import equinoxStudioImg from "@/public/equinox-studio.png";
+import forexRnnImg from "@/public/forex-rnn.jpg";
+import polluteCheckImg from "@/public/pollute-check.jpg";
 
 export const links = [
   {
@@ -39,53 +41,84 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Bachelor of Technology",
-    location: "New Delhi, India",
+    title: "B. Tech (Electronics and Communication)",
+    location: "Guru Gobind Singh Indraprastha University, Delhi",
     description:
-      "Graduated with a degree in Computer Science Engineering. Started exploring full-stack development and cloud technologies.",
+      "Graduated with 8.2 GPA. Won Smart India Hackathon 2019 and Barco Geekathon 2018. Worked as Teaching Assistant at Coding Ninjas for Data Science course and served as Convener of Veda Quiz Society.",
     icon: React.createElement(LuGraduationCap),
-    date: "2018 - 2022",
+    date: "2016 - 2020",
   },
   {
-    title: "Full-Stack Developer",
-    location: "New Delhi, India",
+    title: "Specialist Programmer II",
+    location: "Infosys, London, United Kingdom",
     description:
-      "Started working as a full-stack developer specializing in React and Spring Boot. Gained experience in building scalable web applications.",
+      "Leading enterprise-scale projects for BP including Micro Market automation (148% profitability boost) and AI-powered Smart Shelves across UK/Poland/Australia. Built cloud-native platforms processing 200+ products/day with Apache Camel and AWS.",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2023",
+    date: "2020 - Present",
   },
   {
-    title: "Full-Stack Developer & Data Science Enthusiast",
-    location: "New Delhi, India",
+    title: "Senior Full Stack Engineer",
+    location: "BP, London, United Kingdom",
     description:
-      "Currently working as a full-stack developer with expertise in React, Spring Boot, and cloud technologies. Passionate about data science and machine learning.",
+      "Currently architecting multi-tenant SaaS platforms, leading incident management teams, and implementing conversational analytics with natural language SQL generation. Published research on RNNs and filed patent for synthetic image generation.",
     icon: React.createElement(FaReact),
-    date: "2023 - present",
+    date: "2025 - Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "E-Commerce Platform",
+    title: "BP Wild Bean Café - Micro Market",
     description:
-      "A full-stack e-commerce platform built with React frontend and Spring Boot backend. Features include user authentication, product management, shopping cart, and payment integration.",
-    tags: ["React", "Spring Boot", "MySQL", "JWT", "Stripe API"],
-    imageUrl: corpcommentImg,
+      "Enterprise-grade API and analytics platform automating pricing, sales, and inventory management for 50+ BP forecourt retailers. Built cloud-native platform with Apache Camel processing 200+ products/day, boosting dealer profitability by 148%.",
+    tags: ["Apache Camel", "AWS", "React", "SAP", "OAuth 2.0", "DynamoDB"],
+    imageUrl: wbcMicroMarketImg,
+    link: "https://www.bp.com/en_gb/united-kingdom/home/products-and-services/bp-dealer-solutions/wild-bean-cafe.html",
   },
   {
-    title: "Data Analytics Dashboard",
+    title: "BP - Store of Today",
     description:
-      "Interactive dashboard for data visualization and analytics. Built with React and Python Flask backend, featuring real-time data processing and ML-powered insights.",
-    tags: ["React", "Python", "Flask", "Pandas", "Chart.js", "AWS"],
-    imageUrl: rmtdevImg,
+      "Computer vision system for automated event detection and dynamic pricing via Electronic Shelf Labels in BP retail stores across Australia. Built event-driven architecture with Linux edge devices and auto-scaling AWS infrastructure.",
+    tags: [
+      "Computer Vision",
+      "AWS",
+      "Terraform",
+      "Grafana",
+      "Prometheus",
+      "Edge Computing",
+    ],
+    imageUrl: electronicShelfLabelsImg
   },
   {
-    title: "Cloud-Native Task Manager",
+    title: "Infosys Equinox Studio",
     description:
-      "A scalable task management application deployed on AWS. Features include microservices architecture, containerization, and automated CI/CD pipeline.",
-    tags: ["Next.js", "Spring Boot", "Docker", "AWS", "Microservices"],
-    imageUrl: wordanalyticsImg,
+      "Low-code/No-code Digital Commerce Front-end Builder developed in Angular and Express. Worked with enterprise clients including Kraft Heinz, Shutterfly, Herbalife, and Nu Skin, accounting for 22% of team revenue.",
+    tags: ["Angular", "Express", "Low-code", "Digital Commerce", "Enterprise"],
+    imageUrl: equinoxStudioImg,
+    link: "https://www.linkedin.com/in/kartikmadan11/", // Replace with actual project link if available
   },
+  {
+    title: "Forex Trading Neural Network",
+    description:
+      "Recurrent neural network model for time series forecasting on Forex charts with real-time integration via WebSockets to MetaTrader platform. Published research on analyzing financial market trends using deep learning.",
+    tags: [
+      "Python",
+      "RNN",
+      "Time Series",
+      "WebSocket",
+      "MetaTrader",
+      "Deep Learning",
+    ],
+    imageUrl: forexRnnImg,
+    link: "https://www.linkedin.com/in/kartikmadan11/", // Replace with actual project link if available
+  },
+  {
+    title: "PolluteCheck",
+    description: "A Green Auditing System: WASD PolluteCheck is a modern and innovative approach to devise a system that can audit industries on the basis of their pollution emissions. WASD stands for Water, Air, Sound and Data Collection.",
+    tags: ["IoT", "Data Science", "Cloud", "Sustainability", "Environmental Tech"],
+    link: "https://link.springer.com/chapter/10.1007/978-981-15-5113-0_36",
+    imageUrl: polluteCheckImg
+  }
 ] as const;
 
 export const skillsData = [
@@ -96,9 +129,11 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
-  "Spring Boot",
+  "Angular",
+  "Express",
   "Java",
   "Python",
+  "C++",
   "Git",
   "Tailwind",
   "Bootstrap",
@@ -107,18 +142,30 @@ export const skillsData = [
   "MongoDB",
   "Redis",
   "AWS",
+  "GCP",
   "Azure",
   "Docker",
   "Kubernetes",
+  "Terraform",
+  "Apache Camel",
+  "SAP",
+  "Prometheus",
+  "Grafana",
+  "Jenkins",
   "Machine Learning",
   "Data Science",
   "Pandas",
   "NumPy",
   "Scikit-learn",
   "TensorFlow",
+  "Computer Vision",
+  "Edge Computing",
   "REST APIs",
   "GraphQL",
   "Microservices",
+  "OAuth 2.0",
+  "DynamoDB",
+  "Alteryx",
   "Framer Motion",
 ] as const;
 
@@ -126,7 +173,8 @@ export const blogData = [
   {
     id: 1,
     title: "Getting Started with React and Spring Boot",
-    excerpt: "Learn how to build a full-stack application using React for the frontend and Spring Boot for the backend.",
+    excerpt:
+      "Learn how to build a full-stack application using React for the frontend and Spring Boot for the backend.",
     content: `
 # Getting Started with React and Spring Boot
 
@@ -163,7 +211,8 @@ This combination provides a solid foundation for building scalable web applicati
   {
     id: 2,
     title: "Introduction to Machine Learning with Python",
-    excerpt: "Dive into the world of machine learning and discover how Python makes it accessible for developers.",
+    excerpt:
+      "Dive into the world of machine learning and discover how Python makes it accessible for developers.",
     content: `
 # Introduction to Machine Learning with Python
 
@@ -197,7 +246,8 @@ Python's simplicity and powerful libraries make it the perfect choice for machin
   {
     id: 3,
     title: "Cloud Computing: AWS vs Azure",
-    excerpt: "A comprehensive comparison of AWS and Azure cloud platforms for modern application deployment.",
+    excerpt:
+      "A comprehensive comparison of AWS and Azure cloud platforms for modern application deployment.",
     content: `
 # Cloud Computing: AWS vs Azure
 

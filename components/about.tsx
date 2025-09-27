@@ -4,6 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import Link from "next/link";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -19,24 +20,34 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        👨‍💻 I am a{" "}
-        <span className="font-medium">Full-Stack Developer</span> from{" "}
-        <span className="font-medium">New Delhi, India</span>. 🔭 I specialize in developing applications using{" "}
-        <span className="font-medium">React and Spring Boot</span>, with a strong focus on{" "}
-        <span className="font-medium">cloud technologies</span>. 🚀 I have a passion for{" "}
-        <span className="font-medium">data science</span> and enjoy creating innovative solutions that leverage{" "}
-        <span className="font-medium">machine learning</span>. My core stack includes{" "}
+        👨‍💻 I am a <span className="font-medium">Full-Stack Developer</span> from{" "}
+        <span className="font-medium">New Delhi, India</span>. 🔭 I specialize
+        in developing applications using{" "}
+        <span className="font-medium">React and Spring Boot</span>, with a
+        strong focus on <span className="font-medium">cloud technologies</span>.
+        🚀 I have a passion for{" "}
+        <span className="font-medium">data science</span> and enjoy creating
+        innovative solutions that leverage{" "}
+        <span className="font-medium">machine learning</span>. My core stack
+        includes{" "}
         <span className="font-medium">
           React, Next.js, Spring Boot, Java, Python, and AWS/Azure
         </span>
-        . I am always eager to learn new technologies and tackle challenging problems.
+        . I am always eager to learn new technologies and tackle challenging
+        problems.
       </p>
 
       <p>
         🖋️ I also share my knowledge and experiences through writing on{" "}
-        <span className="font-medium">Medium</span>, where I publish articles about full-stack development, 
-        cloud technologies, and data science. <span className="italic">When I'm not coding</span>, ⚽ I love{" "}
-        <span className="font-medium">playing and watching football</span>. I also enjoy exploring new tech trends and contributing to open-source projects.
+        <Link href="https://medium.com/@kartikmadan11" target="_blank">
+          Medium
+        </Link>
+        , where I publish articles about cloud technologies, data science and
+        everything I find interesting.{" "}
+        <span className="italic">When I'm not coding</span>, ⚽ I love{" "}
+        <span className="font-medium">playing and watching football</span>. I
+        also enjoy exploring new tech trends and contributing to open-source
+        projects.
       </p>
     </motion.section>
   );

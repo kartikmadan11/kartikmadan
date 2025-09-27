@@ -3,9 +3,9 @@ import BlogPost from "@/components/blog-post";
 import { notFound } from "next/navigation";
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -14,9 +14,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: BlogPostPageProps) {
-  const post = blogData.find((post) => post.id.toString() === params.id);
-  
+export async function generateMetadata({ params }: BlogPostPageProps) {
+  const resolvedParams = await params;
+  const post = blogData.find((post) => post.id.toString() === resolvedParams.id);
+
   if (!post) {
     return {
       title: "Post Not Found | Kartik Madan",
@@ -29,8 +30,9 @@ export function generateMetadata({ params }: BlogPostPageProps) {
   };
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = blogData.find((post) => post.id.toString() === params.id);
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const resolvedParams = await params;
+  const post = blogData.find((post) => post.id.toString() === resolvedParams.id);
 
   if (!post) {
     notFound();
