@@ -7,6 +7,12 @@ import electronicShelfLabelsImg from "@/public/Electronic-Shelf-Labels.jpg";
 import equinoxStudioImg from "@/public/equinox-studio.png";
 import forexRnnImg from "@/public/forex-rnn.jpg";
 import polluteCheckImg from "@/public/pollute-check.jpg";
+import joeRoganImg from "@/public/joe-rogan.jpg";
+import danielEkImg from "@/public/daniel-ek.jpg";
+import gulPanagImg from "@/public/gul-panag.jpg";
+import cyrusSaysImg from "@/public/cyrus-says.jpg";
+import regionalAdsImg from "@/public/regional-ads.jpg";
+import spotifyImg from "@/public/spotify.jpg";
 
 export const links = [
   {
@@ -159,107 +165,71 @@ export const skillsData = [
 export const blogData = [
   {
     id: 1,
-    title: "Getting Started with React and Spring Boot",
+    title: "The Spotify-Joe Rogan Deal: A Shift in the Podcasting Landscape",
     excerpt:
-      "Learn how to build a full-stack application using React for the frontend and Spring Boot for the backend.",
+      "Analyzing how Spotify's $100 million deal with Joe Rogan represents a significant milestone in the evolution of podcasting and digital audio content.",
     content: `
-# Getting Started with React and Spring Boot
+# The Spotify-Joe Rogan Deal: A Shift in the Podcasting Landscape
 
-Building modern web applications requires a robust frontend and a scalable backend. In this post, we'll explore how to combine React and Spring Boot to create powerful full-stack applications.
+Joe Rogan recently signed a multi-year licensing deal with Spotify that defines a shift in the podcasts spectrum. The deal will make The Joe Rogan Experience — which Rogan launched in 2009 — available exclusively on Spotify. For a lot of people who don't care about podcasts it might just seem to be a case of an international company wanting monopoly on a famous commodity. Well, that might be true but this deal might just be the biggest milestone in audio yet.
 
-## Why React and Spring Boot?
+![Joe Rogan — Host of JRE Experience [Spotify Newsroom]](${joeRoganImg.src})
 
-React provides an excellent user experience with its component-based architecture, while Spring Boot offers a comprehensive framework for building enterprise-grade backend services.
+## Why JRE?
 
-## Setting up the Development Environment
+Joe Rogan Experience is downloaded over 190 million times a month and is described as "one of the last bastions for civil discussion in contemporary America". It generally features intellectual conversations with scientists, comedians and famous individuals including Elon Musk and Edward Snowden to recreational usage insights and wild conspiracy theories with Mike Tyson and Eddie Bravo.
 
-1. Install Node.js and npm
-2. Install Java 17+
-3. Set up your IDE (VS Code, IntelliJ IDEA)
+Rogan is a stand up comedian and a mixed martial arts commentator. He started commentating for mixed martial arts promotion company Ultimate Fighting Championship in the late 90s. Hence, on his show he regularly interviews and hosts Fight Companion 'watchalongs' with popular MM artists, wrestlers, and athletes.
 
-## Creating the Spring Boot Backend
+## Advertising on Podcasts
 
-Start by creating a new Spring Boot project with the necessary dependencies...
+Google Podcasts, Apple Podcasts, Stitcher and other audio apps deliver podcasts directly via RSS feeds freely without having exclusive ownership of any of these. Podcasters make money by advertising. The advertisements are often minute long audio bytes by the artists about businesses or companies that offer discounted prices for listeners. But there is a general flaw in that idea. The companies that advertise on these pods are usually regional to the artists.
 
-## Building the React Frontend
+![Most popular podcasts have regional advertisements [Overcast]](${regionalAdsImg.src})
 
-Create a new React application and set up the project structure...
+For instance if you are listening to a popular crime podcast in India and there was a minute long break where the host reads ads about stamps.com or Cooler King e-bikes which have businesses in USA or UK, you'd just not be in the loop. And that is where Spotify sees a marketable application. This obviously won't be the case if there are more podcasts closer to home. But people tend to listen to podcasts that are top of the charts and because Spotify doesn't own exclusivity over a lot of popular podcasts, the advertisements can't be changed to accommodate personalized data. Spotify reportedly spent over $500 million dollars in 2019 to boost its ad business.
 
-## Conclusion
+![Daniel Ek, CEO of Spotify [Spotify Newsroom]](${danielEkImg.src})
 
-This combination provides a solid foundation for building scalable web applications.
+Daniel Ek, CEO of Spotify said just like with music — podcast listeners should expect "curation and customization that users have come to expect from Spotify. We will offer better discovery, data, and monetization to creators." The message is clear, Spotify wants to be the biggest name in audio and it's banking on users to pay for it with their data. This is an effort to make better purchasing and production decisions so that it attracts the biggest audience.
+
+## Indian Podcasts
+
+### Spotify Originals
+
+![Actress Gul Panag hosts Special Mission podcast [Spotify India]](${gulPanagImg.src})
+
+Actress Gul Panag hosts the podcast "Special Mission", which is a tribute to India's armed forces. Another idea is simply promoting original content. Spotify Originals like Zindagi Unplugged and Special Mission with Gul Panag have regularly featured on the app's podcast charts in the country. Even though most people would rather just listen to the popular worldwide podcasts, indie content would always find itself a niche audience. The app also added content from radio channels Radio City and Big FM, and Aawaz.com, an Indian podcasts and spoken-word audio network. All of this is available exclusively on the platform.
+
+![Cyrus Says - Popular Indian comedy podcast [IVM Podcasts]](${cyrusSaysImg.src})
+
+Cyrus Broacha started Cyrus Says in 2015 and is produced by Indian podcast network IVM Podcasts. And lest we forget the All India Bakchod podcast that started back in 2012 and was uploaded on SoundCloud. That was probably India's only out-and-out crass and half-baked comedy pod. And of course, with the current political climate, it doesn't exist anymore.
+
+## Why are Podcasts So Popular?
+
+![Spotify's efforts to dominate the podcast industry [Spotify Blog]](${spotifyImg.src})
+
+Reading this article in its entirety might seem like a task if you haven't just sat down for some crispy podcast insights. But if someone like Morgan Freeman or David Attenborough would read it out loud to you while you were working out or completing chores at your house, you'd be in for a treat and would want the next episode immediately. And that's why podcasts are the buzzword of 2020.
+
+### Multitasking and Podcasting
+
+- In the US, 22% of listening happens while driving.
+- According to another study, 4% of listeners do so when working out, or cooking (50%), or simply relaxing before going to bed (51%).
+
+### A Podcast For Everyone
+
+I like listening to podcasts over music while running or working out. Music is a popular alternative too, but zoning out of a repetitive playlist space is easy. That won't necessarily be the case with an interesting pod. Also, podcasts offer something primitive — live chat. And that's more or less it. Podcasts are like reading a blog, watching a YT video or surfing reddit or all at the same time while listening. And there's an audience for almost every kind of topic. There are so many different categories and genres today. And it's ever growing.
     `,
     author: "Kartik Madan",
-    publishedAt: "2024-01-15",
-    readTime: "8 min read",
-    tags: ["React", "Spring Boot", "Full Stack", "Tutorial"],
-    category: "Development",
-  },
-  {
-    id: 2,
-    title: "Introduction to Machine Learning with Python",
-    excerpt:
-      "Dive into the world of machine learning and discover how Python makes it accessible for developers.",
-    content: `
-# Introduction to Machine Learning with Python
-
-Machine learning is transforming how we solve complex problems. Python, with its rich ecosystem of libraries, makes it easier than ever to get started.
-
-## What is Machine Learning?
-
-Machine learning is a subset of artificial intelligence that enables computers to learn and make decisions from data without being explicitly programmed.
-
-## Popular Python Libraries
-
-- **Scikit-learn**: For traditional machine learning algorithms
-- **TensorFlow**: For deep learning
-- **Pandas**: For data manipulation
-- **NumPy**: For numerical computations
-
-## Your First ML Model
-
-Let's build a simple linear regression model...
-
-## Conclusion
-
-Python's simplicity and powerful libraries make it the perfect choice for machine learning projects.
-    `,
-    author: "Kartik Madan",
-    publishedAt: "2024-01-10",
+    publishedAt: "2020-08-19",
     readTime: "10 min read",
-    tags: ["Python", "Machine Learning", "Data Science", "Tutorial"],
-    category: "Data Science",
-  },
-  {
-    id: 3,
-    title: "Cloud Computing: AWS vs Azure",
-    excerpt:
-      "A comprehensive comparison of AWS and Azure cloud platforms for modern application deployment.",
-    content: `
-# Cloud Computing: AWS vs Azure
-
-Choosing the right cloud platform is crucial for your application's success. Let's compare AWS and Azure across various dimensions.
-
-## Compute Services
-
-Both platforms offer robust compute solutions, but with different approaches...
-
-## Storage Solutions
-
-Understanding storage options is key to designing efficient applications...
-
-## Pricing Models
-
-Cost optimization is a critical factor in cloud adoption...
-
-## Conclusion
-
-Both platforms have their strengths, and the choice depends on your specific requirements.
-    `,
-    author: "Kartik Madan",
-    publishedAt: "2024-01-05",
-    readTime: "12 min read",
-    tags: ["AWS", "Azure", "Cloud Computing", "DevOps"],
-    category: "Cloud",
+    tags: [
+      "Podcasting",
+      "Spotify",
+      "Joe Rogan",
+      "Digital Media",
+      "Content Creation",
+    ],
+    category: "Digital Media",
   },
 ] as const;

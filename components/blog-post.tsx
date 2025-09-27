@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
 import ReactMarkdown from "react-markdown";
+import Image from "next/image";
 
 interface BlogPostProps {
   post: {
@@ -29,7 +30,7 @@ export default function BlogPost({ post }: BlogPostProps) {
         transition={{ duration: 0.5 }}
       >
         {/* Back button */}
-        <Link 
+        <Link
           href="/blog"
           className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mb-8 group"
         >
@@ -48,19 +49,19 @@ export default function BlogPost({ post }: BlogPostProps) {
               {post.category}
             </span>
           </div>
-          
+
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
             {post.title}
           </h1>
-          
+
           <p className="text-lg text-gray-700 dark:text-white/80 leading-relaxed mb-6">
             {post.excerpt}
           </p>
-          
+
           <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-white/70">
             <span>By {post.author}</span>
           </div>
-          
+
           <div className="flex flex-wrap gap-2 mt-4">
             {post.tags.map((tag, index) => (
               <span
@@ -75,7 +76,7 @@ export default function BlogPost({ post }: BlogPostProps) {
 
         {/* Content */}
         <div className="blog-content max-w-none prose prose-lg dark:prose-invert prose-blue">
-          <ReactMarkdown 
+          <ReactMarkdown
             components={{
               h1: ({ children }) => (
                 <h1 className="text-3xl font-bold mt-8 mb-4 text-gray-900 dark:text-white first:mt-0">
@@ -92,25 +93,29 @@ export default function BlogPost({ post }: BlogPostProps) {
                   {children}
                 </h3>
               ),
-              p: ({ children }) => (
-                <p className="text-gray-800 dark:text-white/90 leading-relaxed mb-4">
-                  {children}
-                </p>
-              ),
+              p: ({ children, node }) => {
+                // Check if the paragraph contains only an image
+                if (
+                  node?.children[0]?.type === "element" &&
+                  node.children[0].tagName === "img" &&
+                  node.children.length === 1
+                ) {
+                  return children;
+                }
+                return (
+                  <p className="text-gray-800 dark:text-white/90 leading-relaxed mb-4">
+                    {children}
+                  </p>
+                );
+              },
               ul: ({ children }) => (
-                <ul className="list-disc pl-6 space-y-2 mb-4">
-                  {children}
-                </ul>
+                <ul className="list-disc pl-6 space-y-2 mb-4">{children}</ul>
               ),
               ol: ({ children }) => (
-                <ol className="list-decimal pl-6 space-y-2 mb-4">
-                  {children}
-                </ol>
+                <ol className="list-decimal pl-6 space-y-2 mb-4">{children}</ol>
               ),
               li: ({ children }) => (
-                <li className="text-gray-800 dark:text-white/90">
-                  {children}
-                </li>
+                <li className="text-gray-800 dark:text-white/90">{children}</li>
               ),
               strong: ({ children }) => (
                 <strong className="font-semibold text-gray-900 dark:text-white">
@@ -127,6 +132,32 @@ export default function BlogPost({ post }: BlogPostProps) {
                   {children}
                 </pre>
               ),
+              img: ({ src, alt }) => {
+                // Extract caption from alt text if it contains brackets
+                const captionMatch = alt?.match(/^(.*?)(?:\s*\[(.*?)\])?$/);
+                const imageAlt = captionMatch ? captionMatch[1].trim() : alt;
+                const caption = captionMatch ? captionMatch[2] : null;
+
+                return (
+                  <figure className="flex flex-col items-center my-12">
+                    <div className="w-full max-w-4xl">
+                      <Image
+                        src={src || ""}
+                        alt={imageAlt || ""}
+                        width={800}
+                        height={600}
+                        className="w-full h-auto object-contain rounded-lg"
+                        sizes="(max-width: 800px) 100vw, 800px"
+                      />
+                    </div>
+                    {caption && (
+                      <figcaption className="mt-4 text-sm text-gray-600 dark:text-gray-400 italic text-center px-4">
+                        {imageAlt} [{caption}]
+                      </figcaption>
+                    )}
+                  </figure>
+                );
+              },
             }}
           >
             {post.content}
@@ -137,9 +168,9 @@ export default function BlogPost({ post }: BlogPostProps) {
         <footer className="mt-12 pt-8 border-t border-gray-200 dark:border-white/20">
           <div className="flex items-center justify-between">
             <div className="text-sm text-gray-600 dark:text-white/70">
-              Thanks for reading! 
+              Thanks for reading!
             </div>
-            <Link 
+            <Link
               href="/blog"
               className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors font-medium"
             >
