@@ -87,7 +87,7 @@ export const projectsData = [
       "Prometheus",
       "Edge Computing",
     ],
-    imageUrl: electronicShelfLabelsImg
+    imageUrl: electronicShelfLabelsImg,
   },
   {
     title: "Infosys Equinox Studio",
@@ -95,7 +95,7 @@ export const projectsData = [
       "Low-code/No-code Digital Commerce Front-end Builder developed in Angular and Express. Worked with enterprise clients including Kraft Heinz, Shutterfly, Herbalife, and Nu Skin, accounting for 22% of team revenue.",
     tags: ["Angular", "Express", "Low-code", "Digital Commerce", "Enterprise"],
     imageUrl: equinoxStudioImg,
-    link: "https://www.linkedin.com/in/kartikmadan11/", // Replace with actual project link if available
+    link: "https://www.infosys.com/newsroom/press-releases/2023/launched-infosys-equinox-studio.html",
   },
   {
     title: "Forex Trading Neural Network",
@@ -110,15 +110,22 @@ export const projectsData = [
       "Deep Learning",
     ],
     imageUrl: forexRnnImg,
-    link: "https://www.linkedin.com/in/kartikmadan11/", // Replace with actual project link if available
+    link: "https://github.com/kartikmadan11/MetaTraderForecast",
   },
   {
     title: "PolluteCheck",
-    description: "A Green Auditing System: WASD PolluteCheck is a modern and innovative approach to devise a system that can audit industries on the basis of their pollution emissions. WASD stands for Water, Air, Sound and Data Collection.",
-    tags: ["IoT", "Data Science", "Cloud", "Sustainability", "Environmental Tech"],
+    description:
+      "A Green Auditing System: WASD PolluteCheck is a modern and innovative approach to devise a system that can audit industries on the basis of their pollution emissions. WASD stands for Water, Air, Sound and Data Collection.",
+    tags: [
+      "IoT",
+      "Data Science",
+      "Cloud",
+      "Sustainability",
+      "Environmental Tech",
+    ],
     link: "https://link.springer.com/chapter/10.1007/978-981-15-5113-0_36",
-    imageUrl: polluteCheckImg
-  }
+    imageUrl: polluteCheckImg,
+  },
 ] as const;
 
 export const skillsData = [
