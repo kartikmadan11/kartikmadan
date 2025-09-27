@@ -116,7 +116,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-6 py-2.5 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition-all duration-200 cursor-pointer border border-gray-200 shadow-md hover:shadow-lg dark:bg-slate-900 dark:border-slate-700 dark:hover:bg-slate-800"
-          href="/CV.pdf"
+          href="/Kartik Madan - Resume.pdf"
           download
         >
           Download CV{" "}
