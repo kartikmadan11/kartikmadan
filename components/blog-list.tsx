@@ -10,13 +10,14 @@ export default function BlogList() {
   return (
     <section className="mb-28 max-w-[53rem] scroll-mt-28 w-full" id="blog">
       <SectionHeading>My Blog</SectionHeading>
-      <motion.p 
+      <motion.p
         className="text-center text-gray-700 dark:text-white/70 mb-8"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
       >
-        Thoughts on full-stack development, cloud technologies, and data science.
+        Thoughts on full-stack development, data science and everything I find
+        interesting.
       </motion.p>
       <div className="grid gap-6">
         {blogData.map((post, index) => (
