@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Kartik Madan | Full-Stack Developer & Data Science Enthusiast",
   description:
-    "Kartik Madan is a full-stack developer from New Delhi, India, specializing in React, Spring Boot, and cloud technologies with a passion for data science and machine learning.",
+    "Kartik Madan is a full-stack developer living in London, United Kingdom, specializing in React, Spring Boot, and cloud technologies with a passion for data science and machine learning.",
 };
 
 export default function RootLayout({

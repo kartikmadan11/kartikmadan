@@ -74,7 +74,7 @@ export default function Intro() {
         <span className="font-medium text-blue-600 dark:text-white">
           Full-Stack Developer
         </span>{" "}
-        from <span className="font-medium">New Delhi, India</span>. I specialize
+        living in <span className="font-medium">London, United Kingdom</span>. I specialize
         in developing applications using{" "}
         <span className="font-medium text-emerald-600 dark:text-white">
           React and Spring Boot
