@@ -38,11 +38,11 @@ export default function Intro() {
             <Image
               src="/kartik.jpg"
               alt="Kartik Madan portrait"
-              width="192"
-              height="192"
-              quality="95"
+              width="256"
+              height="256"
+              quality="100"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-64 w-64 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -74,8 +74,8 @@ export default function Intro() {
         <span className="font-medium text-blue-600 dark:text-white">
           Full-Stack Developer
         </span>{" "}
-        living in <span className="font-medium">London, United Kingdom</span>. I specialize
-        in developing applications using{" "}
+        living in <span className="font-medium">London, United Kingdom</span>. I
+        specialize in developing applications using{" "}
         <span className="font-medium text-emerald-600 dark:text-white">
           React and Spring Boot
         </span>
