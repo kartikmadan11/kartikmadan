@@ -72,24 +72,24 @@ export default function Intro() {
           Hi! It's me, Kartik Madan.
         </span>{" "}
         I'm a{" "}
-        <span className="font-medium dark:text-blue-400">
+        <span className="font-medium">
           Full-Stack Developer
         </span>{" "}
         living in <span className="font-medium">London, United Kingdom</span>. I
         specialize in developing applications using{" "}
-        <span className="font-medium dark:text-emerald-400">
+        <span className="font-medium">
           React and Spring Boot
         </span>
         , with a strong focus on{" "}
-        <span className="font-medium dark:text-purple-400">
+        <span className="font-medium">
           cloud technologies
         </span>
         . I have a passion for{" "}
-        <span className="font-medium dark:text-orange-400">
+        <span className="font-medium">
           data science
         </span>{" "}
         and enjoy creating innovative solutions that leverage{" "}
-        <span className="font-medium dark:text-rose-400">
+        <span className="font-medium">
           machine learning
         </span>
         .

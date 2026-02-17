@@ -182,6 +182,7 @@ export const skillsData = [
   "Microservices",
   "OAuth 2.0",
   "DynamoDB",
+  "Databricks",
   "Alteryx",
 ] as const;
 
