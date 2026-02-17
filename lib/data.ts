@@ -7,6 +7,7 @@ import electronicShelfLabelsImg from "@/public/Electronic-Shelf-Labels.jpg";
 import equinoxStudioImg from "@/public/equinox-studio.png";
 import forexRnnImg from "@/public/forex-rnn.jpg";
 import polluteCheckImg from "@/public/pollute-check.jpg";
+import cvlAiImg from "@/public/cvl-ai.jpg";
 import joeRoganImg from "@/public/joe-rogan.jpg";
 import danielEkImg from "@/public/daniel-ek.jpg";
 import gulPanagImg from "@/public/gul-panag.jpg";
@@ -68,11 +69,33 @@ export const experiencesData = [
     description:
       "Currently architecting multi-tenant SaaS platforms, leading incident management teams, and implementing conversational analytics with natural language SQL generation. Published research on RNNs and filed patent for synthetic image generation.",
     icon: React.createElement(FaReact),
-    date: "2025 - Present",
+    date: "Nov 2024 - Nov 2025",
+  },
+  {
+    title: "AI Engineer",
+    location: "BP, London, United Kingdom",
+    description:
+      "Architecting an AI platform to detect and prevent contract value leakage across 100+ suppliers. Built multi-provider OCR pipelines (Azure Document Intelligence, AWS Textract), LLM-powered extraction agents using OpenAI, and ML-based price matching engine recovering $1M+ in leaked value. Automated transaction pipelines on Azure Databricks with Delta Lake storage.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Nov 2025 - Present",
   },
 ] as const;
 
 export const projectsData = [
+  {
+    title: "BP - Contract Value Leakage AI",
+    description:
+      "AI platform to detect and prevent contract value leakage across 100+ suppliers. Designed multi-provider OCR pipelines (Azure Document Intelligence, AWS Textract) and LLM-powered extraction agents using OpenAI for invoice parsing. Built ML-based price matching engine using TF-IDF and cosine similarity to reconcile invoices against contracted price books, recovering $1M+ in leaked value.",
+    tags: [
+      "OpenAI",
+      "Azure Document Intelligence",
+      "AWS Textract",
+      "Azure Databricks",
+      "Delta Lake",
+      "ML",
+    ],
+    imageUrl: cvlAiImg,
+  },
   {
     title: "BP Wild Bean Café - Micro Market",
     description:
