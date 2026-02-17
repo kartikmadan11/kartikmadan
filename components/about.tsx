@@ -12,7 +12,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-20 max-w-[45rem] text-center leading-7 sm:leading-8 sm:mb-40 scroll-mt-28 px-2"
+      className="mb-20 max-w-[45rem] text-justify sm:text-center leading-7 sm:leading-8 sm:mb-40 scroll-mt-28 px-2"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
