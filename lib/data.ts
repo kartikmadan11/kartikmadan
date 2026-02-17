@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import wbcMicroMarketImg from "@/public/wbc-micro-market.jpg";
 import electronicShelfLabelsImg from "@/public/Electronic-Shelf-Labels.jpg";
-import equinoxStudioImg from "@/public/equinox-studio.png";
+import equinoxStudioImg from "@/public/equinox-studio.jpg";
 import forexRnnImg from "@/public/forex-rnn.jpg";
 import polluteCheckImg from "@/public/pollute-check.jpg";
 import cvlAiImg from "@/public/cvl-ai.jpg";

@@ -14,6 +14,16 @@ html.dark {
   @apply border border-black/10;
 }
 
+/* Reduce animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Blog post content styling */
 .blog-content {
   @apply text-gray-800 dark:text-white/90;

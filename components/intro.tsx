@@ -38,11 +38,12 @@ export default function Intro() {
             <Image
               src="/kartik.jpg"
               alt="Kartik Madan portrait"
-              width="256"
-              height="256"
-              quality="100"
+              width={256}
+              height={256}
+              quality={75}
               priority={true}
-              className="h-64 w-64 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              sizes="(max-width: 640px) 192px, 256px"
+              className="h-48 w-48 sm:h-64 sm:w-64 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
