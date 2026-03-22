@@ -42,7 +42,7 @@ export default function About() {
           Medium
         </Link>
         , where I publish articles about cloud technologies, data science and
-        everything I find interesting. When I'm not coding, I love{" "}
+        everything I find interesting. When I&apos;m not coding, I love{" "}
         <span className="font-medium">playing and watching football</span>. I
         also enjoy exploring new tech trends and contributing to open-source
         projects.

@@ -65,7 +65,7 @@ export default function Header() {
                     {
                       "text-gray-950 bg-gray-100 dark:text-slate-100 dark:bg-slate-700":
                         isLinkActive(link.name),
-                    }
+                    },
                   )}
                   href={link.hash}
                   onClick={() => {
@@ -98,9 +98,10 @@ export default function Header() {
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition-colors duration-200 dark:text-slate-400 dark:hover:text-slate-100",
                   {
-                    "text-gray-950 dark:text-slate-100":
-                      isLinkActive(link.name),
-                  }
+                    "text-gray-950 dark:text-slate-100": isLinkActive(
+                      link.name,
+                    ),
+                  },
                 )}
                 href={link.hash}
                 onClick={() => {

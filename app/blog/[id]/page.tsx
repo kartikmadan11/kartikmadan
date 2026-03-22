@@ -16,7 +16,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: BlogPostPageProps) {
   const resolvedParams = await params;
-  const post = blogData.find((post) => post.id.toString() === resolvedParams.id);
+  const post = blogData.find(
+    (post) => post.id.toString() === resolvedParams.id,
+  );
 
   if (!post) {
     return {
@@ -32,7 +34,9 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const resolvedParams = await params;
-  const post = blogData.find((post) => post.id.toString() === resolvedParams.id);
+  const post = blogData.find(
+    (post) => post.id.toString() === resolvedParams.id,
+  );
 
   if (!post) {
     notFound();

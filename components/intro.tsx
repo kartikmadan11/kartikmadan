@@ -69,30 +69,16 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-semibold text-gray-900 dark:text-white">
-          Hi! It's me, Kartik Madan.
+          Hi! It&apos;s me, Kartik Madan.
         </span>{" "}
-        I'm a{" "}
-        <span className="font-medium">
-          Full-Stack Developer
-        </span>{" "}
+        I&apos;m a <span className="font-medium">Full-Stack Developer</span>{" "}
         living in <span className="font-medium">London, United Kingdom</span>. I
         specialize in developing applications using{" "}
-        <span className="font-medium">
-          React and Spring Boot
-        </span>
-        , with a strong focus on{" "}
-        <span className="font-medium">
-          cloud technologies
-        </span>
-        . I have a passion for{" "}
-        <span className="font-medium">
-          data science
-        </span>{" "}
+        <span className="font-medium">React and Spring Boot</span>, with a
+        strong focus on <span className="font-medium">cloud technologies</span>.
+        I have a passion for <span className="font-medium">data science</span>{" "}
         and enjoy creating innovative solutions that leverage{" "}
-        <span className="font-medium">
-          machine learning
-        </span>
-        .
+        <span className="font-medium">machine learning</span>.
       </motion.h1>
 
       <motion.div
