@@ -156,7 +156,7 @@ export default function Intro() {
 
           <a
             className="bg-white p-3 text-gray-700 flex items-center gap-2 text-lg rounded-full focus:scale-105 hover:scale-105 hover:text-green-600 active:scale-100 transition-all duration-200 cursor-pointer border border-gray-200 shadow-md hover:shadow-lg dark:bg-slate-900 dark:border-slate-700 dark:text-slate-300 dark:hover:text-green-400 dark:hover:bg-slate-800"
-            href="https://kartikmadan.medium.com"
+            href="https://kartikmadan11.medium.com"
             target="_blank"
             title="Follow me on Medium"
           >
