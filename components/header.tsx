@@ -70,7 +70,7 @@ export default function Header() {
                   href={link.hash}
                   onClick={() => {
                     setMenuOpen(false);
-                    if (!link.hash.startsWith("/")) {
+                    if (link.hash.includes("#")) {
                       setActiveSection(link.name);
                       setTimeOfLastClick(Date.now());
                     }
@@ -105,7 +105,7 @@ export default function Header() {
                 )}
                 href={link.hash}
                 onClick={() => {
-                  if (link.hash.startsWith("/")) {
+                  if (!link.hash.includes("#")) {
                     return;
                   }
                   setActiveSection(link.name);

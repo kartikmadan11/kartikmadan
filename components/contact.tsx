@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView("Contact", 0.5);
   const [message, setMessage] = useState("");
 
   return (

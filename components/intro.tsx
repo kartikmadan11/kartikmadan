@@ -71,14 +71,18 @@ export default function Intro() {
         <span className="font-semibold text-gray-900 dark:text-white">
           Hi! It&apos;s me, Kartik Madan.
         </span>{" "}
-        I&apos;m a <span className="font-medium">Full-Stack Developer</span>{" "}
-        living in <span className="font-medium">London, United Kingdom</span>. I
-        specialize in developing applications using{" "}
-        <span className="font-medium">React and Spring Boot</span>, with a
-        strong focus on <span className="font-medium">cloud technologies</span>.
-        I have a passion for <span className="font-medium">data science</span>{" "}
-        and enjoy creating innovative solutions that leverage{" "}
-        <span className="font-medium">machine learning</span>.
+        I&apos;m an experienced{" "}
+        <span className="font-medium">Full Stack Developer</span> and{" "}
+        <span className="font-medium">AI Engineer</span> based in{" "}
+        <span className="font-medium">London, United Kingdom</span>, with a
+        strong background in building scalable web applications and AI-driven
+        solutions. Proficient in{" "}
+        <span className="font-medium">JavaScript/TypeScript</span>,{" "}
+        <span className="font-medium">Python</span>, and various frameworks,
+        with expertise in{" "}
+        <span className="font-medium">data science</span>,{" "}
+        <span className="font-medium">machine learning</span>, and{" "}
+        <span className="font-medium">DevOps</span> practices.
       </motion.h1>
 
       <motion.div
