@@ -8,6 +8,7 @@ import equinoxStudioImg from "@/public/equinox-studio.jpg";
 import forexRnnImg from "@/public/forex-rnn.jpg";
 import polluteCheckImg from "@/public/pollute-check.jpg";
 import cvlAiImg from "@/public/cvl-ai.jpg";
+import energyTradingImg from "@/public/energy-trading.jpg";
 import joeRoganImg from "@/public/joe-rogan.jpg";
 import danielEkImg from "@/public/daniel-ek.jpg";
 import gulPanagImg from "@/public/gul-panag.jpg";
@@ -95,6 +96,21 @@ export const projectsData = [
       "ML",
     ],
     imageUrl: cvlAiImg,
+  },
+  {
+    title: "Energy Trader",
+    description:
+      "ML-driven market participation platform for India\u0027s power trading ecosystem. Features 96-block price forecasting via gradient boosting (2.27% MAPE), LP-based bid optimisation with PuLP, policy-as-code DSM enforcement, risk assessment with Monte Carlo VaR, and a post-market learning loop.",
+    tags: [
+      "Python",
+      "FastAPI",
+      "Next.js",
+      "scikit-learn",
+      "PuLP",
+      "Machine Learning",
+    ],
+    imageUrl: energyTradingImg,
+    link: "https://github.com/kartikmadan11/EnergyTrader",
   },
   {
     title: "BP Wild Bean Café - Micro Market",

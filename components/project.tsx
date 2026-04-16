@@ -67,7 +67,7 @@ export default function Project({
                 quality={75}
                 sizes="(max-width: 640px) 100vw, 28.25rem"
                 loading="lazy"
-                className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+                className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] h-[20rem] object-cover object-top rounded-t-lg shadow-2xl
                   transition 
                   group-hover:scale-[1.04]
                   group-hover:-translate-x-3
@@ -106,7 +106,7 @@ export default function Project({
               quality={75}
               sizes="(max-width: 640px) 100vw, 28.25rem"
               loading="lazy"
-              className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+              className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] h-[20rem] object-cover object-top rounded-t-lg shadow-2xl
                 transition 
                 group-hover:scale-[1.04]
                 group-hover:-translate-x-3
