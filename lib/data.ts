@@ -8,6 +8,7 @@ import equinoxStudioImg from "@/public/equinox-studio.jpg";
 import forexRnnImg from "@/public/forex-rnn.jpg";
 import polluteCheckImg from "@/public/pollute-check.jpg";
 import cvlAiImg from "@/public/cvl-ai.jpg";
+import tradingOpsImg from "@/public/trading-ops.webp";
 import energyTradingImg from "@/public/energy-trading.jpg";
 import joeRoganImg from "@/public/joe-rogan.jpg";
 import danielEkImg from "@/public/daniel-ek.jpg";
@@ -83,6 +84,18 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "BP - Trading Ops Agent",
+    description:
+      "Conversational AI platform that lets trading operators query shipment, parcel, deal, and portfolio data in plain natural language over BP's trading warehouse. Built a multi-stage system that resolves business context, generates governed answers from enterprise data, and validates every response for safety and correctness.",
+    tags: [
+      "Conversational AI",
+      "Natural Language",
+      "Trading Operations",
+      "Enterprise Data",
+    ],
+    imageUrl: tradingOpsImg,
+  },
   {
     title: "BP - Contract Value Leakage AI",
     description:
