@@ -5,6 +5,7 @@ import SectionDivider from "@/components/section-divider";
 const About = dynamic(() => import("@/components/about"));
 const Projects = dynamic(() => import("@/components/projects"));
 const Skills = dynamic(() => import("@/components/skills"));
+const Stack = dynamic(() => import("@/components/stack"));
 const Experience = dynamic(() => import("@/components/experience"));
 const Contact = dynamic(() => import("@/components/contact"));
 
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Projects />
       <Skills />
+      <Stack />
       <Experience />
       <Contact />
     </main>

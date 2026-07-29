@@ -35,6 +35,10 @@ export const links = [
     hash: "/#skills",
   },
   {
+    name: "Stack",
+    hash: "/#stack",
+  },
+  {
     name: "Experience",
     hash: "/#experience",
   },
@@ -213,6 +217,126 @@ export const skillsData = [
   "DynamoDB",
   "Databricks",
   "Alteryx",
+] as const;
+
+export const stackData = [
+  {
+    category: "Terminal & Dev",
+    items: [
+      {
+        name: "WezTerm",
+        icon: "wezterm",
+        note: "My terminal. GPU-accelerated and fully scriptable.",
+        link: "https://wezterm.org/",
+      },
+      {
+        name: "tmux",
+        icon: "tmux",
+        note: "Terminal multiplexing. I basically live in here.",
+        link: "https://github.com/tmux/tmux",
+      },
+      {
+        name: "deck",
+        icon: "zsh",
+        note: "My zsh setup, tuned with a fzf-driven multi-agent workflow.",
+        link: "https://www.zsh.org/",
+      },
+      {
+        name: "Claude Code",
+        icon: "claude",
+        note: "My agentic pair-programmer in the terminal.",
+        link: "https://claude.com/claude-code",
+      },
+    ],
+  },
+  {
+    category: "AI & Agents",
+    items: [
+      {
+        name: "Claude",
+        icon: "anthropic",
+        note: "My daily driver for coding and reasoning-heavy tasks.",
+        link: "https://claude.ai/",
+      },
+      {
+        name: "LangChain",
+        icon: "langchain",
+        note: "Building multi-agent flows, tool use, and RAG pipelines.",
+        link: "https://www.langchain.com/",
+      },
+      {
+        name: "Microsoft Agent Framework",
+        icon: "microsoft",
+        note: "Active contributor. Orchestrating multi-agent workflows.",
+        link: "https://github.com/microsoft/agent-framework",
+      },
+      {
+        name: "Hugging Face",
+        icon: "huggingface",
+        note: "Models, datasets, and the odd fine-tune.",
+        link: "https://huggingface.co/",
+      },
+      {
+        name: "PyTorch",
+        icon: "pytorch",
+        note: "When a problem needs training rather than prompting.",
+        link: "https://pytorch.org/",
+      },
+    ],
+  },
+  {
+    category: "Everyday",
+    items: [
+      {
+        name: "Notion",
+        icon: "notion",
+        note: "Notes, planning, and where most of my life is organised.",
+        link: "https://www.notion.so/",
+      },
+      {
+        name: "Todoist",
+        icon: "todoist",
+        note: "Keeps track of everything I'd otherwise forget.",
+        link: "https://todoist.com/",
+      },
+      {
+        name: "Spotify",
+        icon: "spotify",
+        note: "On for most of the day, coding or otherwise.",
+        link: "https://www.spotify.com/",
+      },
+      {
+        name: "Strava",
+        icon: "strava",
+        note: "Logging runs and generally staying honest about it.",
+        link: "https://www.strava.com/",
+      },
+      {
+        name: "AllTrails",
+        icon: "alltrails",
+        note: "For finding somewhere to hike at the weekend.",
+        link: "https://www.alltrails.com/",
+      },
+      {
+        name: "Discord",
+        icon: "discord",
+        note: "Where I keep up with communities and mates.",
+        link: "https://discord.com/",
+      },
+      {
+        name: "Financial Times",
+        icon: "ft",
+        note: "My morning read for markets and everything else.",
+        link: "https://www.ft.com/",
+      },
+      {
+        name: "NYT Games",
+        icon: "nyt",
+        note: "Wordle and the Connections, non-negotiable daily ritual.",
+        link: "https://www.nytimes.com/crosswords",
+      },
+    ],
+  },
 ] as const;
 
 export const blogData = [

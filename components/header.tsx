@@ -28,7 +28,7 @@ export default function Header() {
     <header className="z-[999] relative">
       {/* Desktop nav background */}
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[42rem] sm:rounded-full dark:bg-slate-900/90 dark:border-slate-700/50 dark:shadow-slate-900/20"
+        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[48rem] sm:rounded-full dark:bg-slate-900/90 dark:border-slate-700/50 dark:shadow-slate-900/20"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
@@ -86,7 +86,7 @@ export default function Header() {
 
       {/* Desktop nav */}
       <nav className="hidden sm:flex fixed top-[1.7rem] left-1/2 -translate-x-1/2 h-[initial] py-0">
-        <ul className="flex flex-nowrap items-center justify-center gap-5 text-[0.85rem] font-medium text-gray-500 dark:text-slate-400">
+        <ul className="flex flex-nowrap items-center justify-center gap-4 text-[0.85rem] font-medium text-gray-500 dark:text-slate-400">
           {links.map((link) => (
             <motion.li
               className="h-3/4 flex items-center justify-center relative"
@@ -96,7 +96,7 @@ export default function Header() {
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition-colors duration-200 dark:text-slate-400 dark:hover:text-slate-100",
+                  "flex w-full items-center justify-center rounded-full px-3 py-3 outline-none transition-colors duration-200 hover:text-gray-950 focus-visible:ring-2 focus-visible:ring-gray-300 dark:text-slate-400 dark:hover:text-slate-100 dark:focus-visible:ring-slate-600",
                   {
                     "text-gray-950 dark:text-slate-100": isLinkActive(
                       link.name,
