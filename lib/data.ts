@@ -79,7 +79,7 @@ export const experiencesData = [
     date: "Jun 2024 - Nov 2025",
   },
   {
-    title: "Senior AI Engineer",
+    title: "AI Engineer",
     location: "BP - Contract Value Leakage, London, United Kingdom",
     description:
       "Built document-processing pipelines and backend services reconciling ~15K supplier invoices a month against agreed price books. Developed extraction and validation services spanning 200+ supplier templates and 50+ invoice formats at 95%+ accuracy, and an invoice-to-contract matching and anomaly-detection engine that reduced undetected contract leakage by ~40%.",
