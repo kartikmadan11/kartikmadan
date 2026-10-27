@@ -10,6 +10,7 @@ import polluteCheckImg from "@/public/pollute-check.jpg";
 import cvlAiImg from "@/public/cvl-ai.jpg";
 import tradingOpsImg from "@/public/trading-ops.webp";
 import energyTradingImg from "@/public/energy-trading.jpg";
+import tapedeckImg from "@/public/tapedeck.jpg";
 import joeRoganImg from "@/public/joe-rogan.jpg";
 import danielEkImg from "@/public/daniel-ek.jpg";
 import gulPanagImg from "@/public/gul-panag.jpg";
@@ -65,7 +66,7 @@ export const experiencesData = [
     title: "Specialist Programmer II",
     location: "Infosys, London, United Kingdom",
     description:
-      "Leading enterprise-scale projects for BP including Micro Market automation (148% profitability boost) and AI-powered Smart Shelves across UK/Poland/Australia. Built cloud-native platforms processing 200+ products/day with Apache Camel and AWS.",
+      "Led enterprise-scale projects for BP including Micro Market automation (148% profitability boost) and AI-powered Smart Shelves across UK/Poland/Australia. Built cloud-native platforms processing 200+ products/day with Apache Camel and AWS.",
     icon: React.createElement(CgWorkAlt),
     date: "2020 - Present",
   },
@@ -73,12 +74,12 @@ export const experiencesData = [
     title: "Senior Full Stack Engineer",
     location: "BP, London, United Kingdom",
     description:
-      "Currently architecting multi-tenant SaaS platforms, leading incident management teams, and implementing conversational analytics with natural language SQL generation. Published research on RNNs and filed patent for synthetic image generation.",
+      "Architected multi-tenant SaaS platforms, led incident management teams, and implemented conversational analytics with natural language SQL generation. Published research on RNNs and filed patent for synthetic image generation.",
     icon: React.createElement(FaReact),
     date: "Nov 2024 - Nov 2025",
   },
   {
-    title: "AI Engineer",
+    title: "Senior AI Engineer",
     location: "BP, London, United Kingdom",
     description:
       "Architecting an AI platform to detect and prevent contract value leakage across 100+ suppliers. Built multi-provider OCR pipelines (Azure Document Intelligence, AWS Textract), LLM-powered extraction agents using OpenAI, and ML-based price matching engine recovering $1M+ in leaked value. Automated transaction pipelines on Azure Databricks with Delta Lake storage.",
@@ -113,6 +114,21 @@ export const projectsData = [
       "ML",
     ],
     imageUrl: cvlAiImg,
+  },
+  {
+    title: "tapedeck",
+    description:
+      "Real-time equity trade blotter where every connected trader sees each booking, amendment and cancellation as it happens. Built on an append-only event log that drives the audit trail and websocket ordering, with exact-decimal pricing, version-checked amendments, netted positions in Postgres and shareable split-pane workspaces.",
+    tags: [
+      "TypeScript",
+      "React",
+      "Fastify",
+      "WebSockets",
+      "PostgreSQL",
+      "Drizzle",
+    ],
+    imageUrl: tapedeckImg,
+    link: "https://github.com/kartikmadan11/tapedeck",
   },
   {
     title: "Energy Trader",
