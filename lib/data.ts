@@ -82,7 +82,7 @@ export const experiencesData = [
     title: "Senior AI Engineer",
     location: "BP, London, United Kingdom",
     description:
-      "Architecting an AI platform to detect and prevent contract value leakage across 100+ suppliers. Built multi-provider OCR pipelines (Azure Document Intelligence, AWS Textract), LLM-powered extraction agents using OpenAI, and ML-based price matching engine recovering $1M+ in leaked value. Automated transaction pipelines on Azure Databricks with Delta Lake storage.",
+      "Delivered Conversational Trading Analytics end to end, letting trading operators query BP's trading warehouse in plain English and cutting query turnaround from hours to seconds. Built the agent-orchestration layer that turns questions into governed SQL, a query safety and validation layer, and an AI evaluation harness scoring text-to-SQL accuracy. Before that, built a contract value leakage platform reconciling ~15K supplier invoices a month, reducing undetected leakage by ~40%.",
     icon: React.createElement(CgWorkAlt),
     date: "Nov 2025 - Present",
   },
