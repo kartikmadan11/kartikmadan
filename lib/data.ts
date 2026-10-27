@@ -74,7 +74,7 @@ export const experiencesData = [
     title: "Senior Full Stack Engineer",
     location: "BP - Micro Market, London, United Kingdom",
     description:
-      "Led development of a cloud-native pricing, sales and inventory platform for self-service Micro Market units across 100+ BP forecourt retailers in the UK and Poland, contributing to a 148% improvement in dealer profitability. Partnered with POS, SAP and platform teams on the integration and analytics workflows, and added natural-language analytics for retail managers. Started on BP's Store of Today, building computer-vision hazard detection and dynamic pricing over Electronic Shelf Labels.",
+      "Led development of a cloud-native pricing, sales and inventory platform for Micro Market units across 100+ BP forecourt retailers in the UK and Poland, contributing to a 148% improvement in dealer profitability. Integrated with POS and SAP, and started on BP's Store of Today with computer-vision hazard detection and dynamic shelf-label pricing.",
     icon: React.createElement(FaReact),
     date: "Jun 2024 - Nov 2025",
   },
