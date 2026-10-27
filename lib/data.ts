@@ -10,6 +10,7 @@ import polluteCheckImg from "@/public/pollute-check.jpg";
 import cvlAiImg from "@/public/cvl-ai.jpg";
 import tradingOpsImg from "@/public/trading-ops.webp";
 import energyTradingImg from "@/public/energy-trading.jpg";
+import tapedeckImg from "@/public/tapedeck.jpg";
 import joeRoganImg from "@/public/joe-rogan.jpg";
 import danielEkImg from "@/public/daniel-ek.jpg";
 import gulPanagImg from "@/public/gul-panag.jpg";
@@ -62,28 +63,36 @@ export const experiencesData = [
     date: "2016 - 2020",
   },
   {
-    title: "Specialist Programmer II",
-    location: "Infosys, London, United Kingdom",
+    title: "Full Stack Engineer",
+    location: "Infosys - Equinox Studio, Gurgaon, India",
     description:
-      "Leading enterprise-scale projects for BP including Micro Market automation (148% profitability boost) and AI-powered Smart Shelves across UK/Poland/Australia. Built cloud-native platforms processing 200+ products/day with Apache Camel and AWS.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2020 - Present",
+      "Built Equinox Studio, a low-code/no-code digital commerce platform for global brands including Kraft Heinz, Shutterfly, Herbalife and Nu Skin, contributing 22% of team revenue. Worked across Angular, React, Next.js and Node/Express microservices with Java.",
+    icon: React.createElement(FaReact),
+    date: "Nov 2020 - Jun 2024",
   },
   {
     title: "Senior Full Stack Engineer",
-    location: "BP, London, United Kingdom",
+    location: "BP - Micro Market, London, United Kingdom",
     description:
-      "Currently architecting multi-tenant SaaS platforms, leading incident management teams, and implementing conversational analytics with natural language SQL generation. Published research on RNNs and filed patent for synthetic image generation.",
+      "Led development of a cloud-native pricing, sales and inventory platform for Micro Market units across 100+ BP forecourt retailers in the UK and Poland, contributing to a 148% improvement in dealer profitability. Integrated with POS and SAP, and started on BP's Store of Today with computer-vision hazard detection and dynamic shelf-label pricing.",
     icon: React.createElement(FaReact),
-    date: "Nov 2024 - Nov 2025",
+    date: "Jun 2024 - Nov 2025",
   },
   {
-    title: "AI Engineer",
-    location: "BP, London, United Kingdom",
+    title: "Senior AI Engineer",
+    location: "BP - Contract Value Leakage, London, United Kingdom",
     description:
-      "Architecting an AI platform to detect and prevent contract value leakage across 100+ suppliers. Built multi-provider OCR pipelines (Azure Document Intelligence, AWS Textract), LLM-powered extraction agents using OpenAI, and ML-based price matching engine recovering $1M+ in leaked value. Automated transaction pipelines on Azure Databricks with Delta Lake storage.",
+      "Built document-processing pipelines and backend services reconciling ~15K supplier invoices a month against agreed price books. Developed extraction and validation services spanning 200+ supplier templates and 50+ invoice formats at 95%+ accuracy, and an invoice-to-contract matching and anomaly-detection engine that reduced undetected contract leakage by ~40%.",
     icon: React.createElement(CgWorkAlt),
-    date: "Nov 2025 - Present",
+    date: "Nov 2025 - Apr 2026",
+  },
+  {
+    title: "Senior AI Engineer",
+    location: "BP - Conversational Trading Analytics, London, United Kingdom",
+    description:
+      "Delivered Conversational Trading Analytics end to end, from a React/TypeScript frontend and FastAPI backend to CI/CD and infrastructure-as-code, cutting query turnaround from hours to seconds. Built the agent-orchestration layer that turns trading operators' natural-language questions into governed SQL over BP's trading warehouse, a query safety and validation layer, and an AI evaluation harness scoring text-to-SQL accuracy.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Apr 2026 - Present",
   },
 ] as const;
 
@@ -113,6 +122,21 @@ export const projectsData = [
       "ML",
     ],
     imageUrl: cvlAiImg,
+  },
+  {
+    title: "tapedeck",
+    description:
+      "Real-time equity trade blotter where every connected trader sees each booking, amendment and cancellation as it happens. Built on an append-only event log that drives the audit trail and websocket ordering, with exact-decimal pricing, version-checked amendments, netted positions in Postgres and shareable split-pane workspaces.",
+    tags: [
+      "TypeScript",
+      "React",
+      "Fastify",
+      "WebSockets",
+      "PostgreSQL",
+      "Drizzle",
+    ],
+    imageUrl: tapedeckImg,
+    link: "https://github.com/kartikmadan11/tapedeck",
   },
   {
     title: "Energy Trader",
