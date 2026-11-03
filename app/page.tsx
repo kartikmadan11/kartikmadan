@@ -7,6 +7,7 @@ const Projects = dynamic(() => import("@/components/projects"));
 const Skills = dynamic(() => import("@/components/skills"));
 const Stack = dynamic(() => import("@/components/stack"));
 const Experience = dynamic(() => import("@/components/experience"));
+const Publications = dynamic(() => import("@/components/publications"));
 const Contact = dynamic(() => import("@/components/contact"));
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Skills />
       <Stack />
       <Experience />
+      <Publications />
       <Contact />
     </main>
   );

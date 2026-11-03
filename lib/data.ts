@@ -44,6 +44,10 @@ export const links = [
     hash: "/#experience",
   },
   {
+    name: "Publications",
+    hash: "/#publications",
+  },
+  {
     name: "Blog",
     hash: "/blog",
   },
@@ -360,6 +364,32 @@ export const stackData = [
         link: "https://www.nytimes.com/crosswords",
       },
     ],
+  },
+] as const;
+
+export const publicationsData = [
+  {
+    type: "Patent",
+    title: "Context-based graphical element replacement",
+    venue: "US 2026/0141595 A1 (published application) · Infosys",
+    role: "Co-inventor",
+    date: "May 2026",
+    description:
+      "A system that finds the images and icons in a document, reads each one's visual context alongside the nearby text, the surrounding graphics and the document as a whole, and generates context-aware replacements before the file is rendered.",
+    icon: "patent",
+    link: "https://patents.google.com/patent/US20260141595A1/en",
+  },
+  {
+    type: "Conference paper",
+    title:
+      "Development of a Real-Time Pollution Monitoring System for Green Auditing",
+    venue: "ICICC 2020 · Springer, Advances in Intelligent Systems and Computing",
+    role: "Co-author",
+    date: "Aug 2020",
+    description:
+      "A wireless sensor network of ESP12 modules that records air, water and sound pollution at textile factories in real time, with a web dashboard that scores each factory so authorities can audit the industries in an area.",
+    icon: "paper",
+    link: "https://link.springer.com/chapter/10.1007/978-981-15-5113-0_36",
   },
 ] as const;
 
