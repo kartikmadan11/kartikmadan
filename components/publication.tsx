@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 type PublicationProps = {
   title: string;
+  type: string;
   venue: string;
   date: string;
   description: string;
@@ -14,6 +15,7 @@ type PublicationProps = {
 
 export default function Publication({
   title,
+  type,
   venue,
   date,
   description,
@@ -46,7 +48,8 @@ export default function Publication({
         <div className="pt-6 pb-8 px-6 sm:px-12 sm:py-12 flex flex-col">
           <h3 className="text-2xl font-semibold mb-2">{title}</h3>
           <p>
-            {venue}, <span className="whitespace-nowrap">{date}</span>
+            {type} - <span className="whitespace-nowrap">{venue},</span>{" "}
+            <span className="whitespace-nowrap">{date}</span>
           </p>
           <p className="mt-2 mb-4 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
