@@ -369,29 +369,27 @@ export const stackData = [
 
 export const publicationsData = [
   {
-    type: "Patent pending",
     title: "Context-based graphical element replacement",
-    venue: "US 2026/0141595 A1 · Infosys",
-    role: "Co-inventor",
-    date: "May 2026",
+    venue: "Infosys - US 2026/0141595 A1",
+    date: "2020",
     description:
       "A system that finds the images and icons in a document, reads each one's visual context alongside the nearby text, the surrounding graphics and the document as a whole, and generates context-aware replacements before the file is rendered.",
-    tags: ["Machine learning", "Image generation", "Document processing"],
-    kind: "patent",
+    tags: [
+      "Patent pending",
+      "Co-inventor",
+      "Machine learning",
+      "Image generation",
+    ],
     link: "https://patents.google.com/patent/US20260141595A1/en",
   },
   {
-    type: "Conference paper",
     title:
       "Development of a Real-Time Pollution Monitoring System for Green Auditing",
-    venue:
-      "ICICC 2020 · Springer, Advances in Intelligent Systems and Computing",
-    role: "Co-author",
+    venue: "Springer - ICICC 2020",
     date: "Aug 2020",
     description:
       "A wireless sensor network of ESP12 modules that records air, water and sound pollution at textile factories in real time, with a web dashboard that scores each factory so authorities can audit the industries in an area.",
-    tags: ["IoT", "Wireless sensor networks", "Environmental monitoring"],
-    kind: "paper",
+    tags: ["Conference paper", "Co-author", "IoT", "Wireless sensor networks"],
     link: "https://link.springer.com/chapter/10.1007/978-981-15-5113-0_36",
   },
 ] as const;
