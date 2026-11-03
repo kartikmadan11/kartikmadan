@@ -28,14 +28,14 @@ export default function Header() {
     <header className="z-[999] relative">
       {/* Desktop nav background */}
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[48rem] sm:rounded-full dark:bg-slate-900/90 dark:border-slate-700/50 dark:shadow-slate-900/20"
+        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] lg:top-6 lg:h-[3.25rem] lg:w-[54rem] lg:rounded-full dark:bg-slate-900/90 dark:border-slate-700/50 dark:shadow-slate-900/20"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
 
       {/* Mobile hamburger button */}
       <button
-        className="fixed top-4 right-4 z-[1000] sm:hidden p-2 rounded-full bg-white/80 backdrop-blur-sm border border-gray-200 shadow-md dark:bg-slate-900/80 dark:border-slate-700"
+        className="fixed top-4 right-4 z-[1000] lg:hidden p-2 rounded-full bg-white/80 backdrop-blur-sm border border-gray-200 shadow-md dark:bg-slate-900/80 dark:border-slate-700"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >
@@ -50,7 +50,7 @@ export default function Header() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed inset-0 z-[998] bg-white/95 backdrop-blur-md dark:bg-slate-900/95 sm:hidden"
+            className="fixed inset-0 z-[998] bg-white/95 backdrop-blur-md dark:bg-slate-900/95 lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -85,7 +85,7 @@ export default function Header() {
       </AnimatePresence>
 
       {/* Desktop nav */}
-      <nav className="hidden sm:flex fixed top-[1.7rem] left-1/2 -translate-x-1/2 h-[initial] py-0">
+      <nav className="hidden lg:flex fixed top-[1.7rem] left-1/2 -translate-x-1/2 h-[initial] py-0">
         <ul className="flex flex-nowrap items-center justify-center gap-4 text-[0.85rem] font-medium text-gray-500 dark:text-slate-400">
           {links.map((link) => (
             <motion.li
